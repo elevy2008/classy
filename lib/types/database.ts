@@ -151,6 +151,7 @@ export interface BookingWithDetails extends Booking {
 }
 
 export interface OfficeHourSlotWithBookings extends OfficeHourSlot {
+  teacher?: Profile;
   bookings?: Booking[];
   bookings_count?: number;
 }
